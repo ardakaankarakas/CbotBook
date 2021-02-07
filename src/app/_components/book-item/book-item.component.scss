@@ -1,0 +1,39 @@
+.book-item {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation-duration: 0.3s;
+}
+
+.remove-item {
+  cursor: pointer;
+  margin-left: 14px;
+}
+
+.book-item-left {
+  display: flex;
+  align-items: center;
+}
+
+.book-item-label {
+  padding: 10px;
+  border: 1px solid white;
+  margin-left: 12px;
+}
+
+.book-item-edit {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-left: 12px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}

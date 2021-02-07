@@ -1,0 +1,13 @@
+<ul class="list-group">
+
+  <div class="list-group-item">
+    <div *ngIf="!book.editing; else editingBook" class="list-group-item">{{ book.name }} - {{book.author}}</div>
+    <ng-template #editingBook>
+      <input type="text" class="list-group-item" [(ngModel)]="book.name" autofocus>
+    </ng-template>
+  </div>
+  <div  type="button" class="btn btn-danger" (click)="bookService.deleteBook(book._id)">
+    &times;
+  </div>
+
+</ul>
